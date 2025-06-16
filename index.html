@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>WatchZone - ร้านนาฬิกาที่คุณไว้ใจ</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #fffaf0;
+}
+header {
+  background: #edf5ff;
+  color: #000022;
+  padding: 20px;
+  border-bottom: 5px solid #ffcc5b;
+  position: relative;
+}
+header h1 {
+  margin-bottom: 10px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  padding: 10px 20px;
+  background: #fff5cc;
+  border-radius: 12px;
+  border: 2px solid #ffcc5b;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000022;
+}
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #fff5cc;
+  border-radius: 12px;
+  border: 2px solid #ffcc5b;
+}
+.top-right a {
+  color: #000022;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.top-right .separator {
+  color: #ffcc5b;
+  margin: 0 10px;
+}
+section {
+  padding: 20px;
+  border-bottom: 5px solid #ffcc5b;
+}
+section h2 {
+  color: #ffcc5b;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px;
+}
+.container .item {
+  padding: 20px;
+  background: #fff5cc;
+  border-radius: 12px;
+  border: 2px solid #ffcc5b;
+  text-align: center;
+}
+.container .item img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+.container .item p {
+  color: #000022;
+}
+.container .item button {
+  padding: 10px 20px;
+  background: #ffcc5b;
+  border: none;
+  border-radius: 12px;
+  color: #000022;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.container .item button:hover {
+  background: #ffa500;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #edf5ff;
+  color: #000022;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>WatchZone</h1>
+  <p>ร้านนาฬิกาที่คุณไว้ใจ</p>
+  
+  <div class="top-right">
+    <a href="">เข้าสู่ระบบ</a>
+    <span class="separator">|</span>
+    <a href="">ตะกร้าสินค้า</a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="">หน้าแรก</a></li>
+      <li><a href="">เกี่ยวกับเรา</a></li>
+      <li><a href="">สินค้าและบริการ</a></li>
+      <li><a href="">คำถามที่พบได้</a></li>
+      <li><a href="">วิธีการสั่งซื้อ</a></li>
+      <li><a href="">ติดต่อเรา</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <h2>นาฬิกาที่มีให้คุณเลือก</h2>
+  <div class="container">
+    <div class="item">
+      <img src="d:\ธนิก_อินทรจิต\รูป\SRP839J.jpg" alt="นาฬิกาที่ 1">
+      <p>นาฬิกาที่ 1</p>
+      <button onclick="addToCart(this)">หยิบใส่ตะกร้า</button>
+    </div>
+    <div class="item">
+      <img src="d:\ธนิก_อินทรจิต\รูป\W06-03286-001_1.webp" alt="นาฬิกาที่ 2">
+      <p>นาฬิกาที่ 2</p>
+      <button onclick="addToCart(this)">หยิบใส่ตะกร้า</button>
+    </div>
+    <div class="item">
+      <img src="d:\ธนิก_อินทรจิต\รูป\gjxgbi.png" alt="นาฬิกาที่ 3">
+      <p>นาฬิกาที่ 3</p>
+      <button onclick="addToCart(this)">หยิบใส่ตะกร้า</button>
+    </div>
+    <div class="item">
+      <img src="d:\ธนิก_อินทรจิต\รูป\SPB465J-4.jpg" alt="นาฬิกาที่ 4">
+      <p>นาฬิกาที่ 4</p>
+      <button onclick="addToCart(this)">หยิบใส่ตะกร้า</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 WatchZone</p>
+</footer>
+
+<script>
+function addToCart(el) {
+  alert("ได้หยิบนาฬิกานี้ใส่ตะกร้าแล้ว!");
+}
+</script>
+
+</body>
+</html>
